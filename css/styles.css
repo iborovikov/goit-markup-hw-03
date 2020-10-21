@@ -56,6 +56,28 @@
     url('../fonts/roboto/roboto-v20-latin_cyrillic-900.svg#Roboto')
       format('svg');
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
 :root {
   --main-text-cl: #757575;
   --accent-cl: #2196f3;
@@ -64,11 +86,48 @@
   --dark-bg: #2f303a;
 }
 body {
+  margin: 0px;
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-cl);
+}
+.main-container {
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.navigation {
+  display: flex;
+}
+.hero-section {
+  background-color: var(--dark-bg);
+  text-align: center;
+  height: 600px;
+  margin-bottom: 94px;
+}
+.benefits-section {
+  height: 101px;
+  margin-bottom: 94px;
+}
+.duty-section {
+  height: 386px;
+  margin-bottom: 94px;
+}
+.team-section {
+  height: 648px;
+  margin-bottom: 0px;
+}
+.footer {
+  height: 252px;
+  background-color: var(--dark-bg);
 }
 .member-container {
   font-size: 16px;
@@ -104,7 +163,9 @@ body {
   color: #ffffff;
 }
 .list {
+  display: flex;
   list-style: none;
+  padding: 0px;
 }
 .link {
   text-decoration: none;
@@ -155,6 +216,7 @@ body {
   letter-spacing: 0.06em;
 }
 .btn {
+  display: inline-block;
   font-family: inherit;
   font-size: 16px;
   text-align: center;
@@ -177,11 +239,4 @@ body {
 .portfolio-btn:focus {
   color: var(--white);
   background-color: var(--accent-cl);
-}
-.footer {
-  background-color: var(--dark-bg);
-}
-.hero-section {
-  background-color: var(--dark-bg);
-  text-align: center;
 }
