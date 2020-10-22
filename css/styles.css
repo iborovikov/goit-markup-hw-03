@@ -93,8 +93,14 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-cl);
 }
-.main-container {
-  width: 1170px;
+.list {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -102,10 +108,25 @@ body {
 }
 .header {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  height: 80px;
 }
 .navigation {
   display: flex;
+  align-items: center;
+}
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contacts {
+  margin-left: auto;
+}
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-section {
   background-color: var(--dark-bg);
@@ -114,22 +135,60 @@ body {
   margin-bottom: 94px;
 }
 .benefits-section {
-  height: 101px;
+  display: flex;
+  margin-top: 0px;
   margin-bottom: 94px;
+}
+.benefits-list .item {
+  width: 270px;
+  height: 101px;
+}
+.benefits-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 .duty-section {
   height: 386px;
   margin-bottom: 94px;
 }
+.duty-list {
+  display: flex;
+  justify-content: center;
+}
+.duty-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.duty-title {
+  margin-bottom: 50px;
+}
 .team-section {
   height: 648px;
   margin-bottom: 0px;
+}
+.members-list {
+  display: flex;
+  justify-content: center;
+}
+.member-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+.member-foto {
+  margin-bottom: 30px;
+}
+.member-name {
+  margin-bottom: 10px;
+}
+.member-position {
+  margin-bottom: 30px;
 }
 .footer {
   height: 252px;
   background-color: var(--dark-bg);
 }
-.member-container {
+.member-item {
   font-size: 16px;
 }
 .member-position {
@@ -156,17 +215,17 @@ body {
   color: var(--accent-cl);
 }
 .header-logo {
+  margin-right: 93px;
   color: #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .footer-logo {
-  color: #ffffff;
+  display: block;
+  color: var(--white);
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
-.list {
-  display: flex;
-  list-style: none;
-  padding: 0px;
-}
+
 .link {
   text-decoration: none;
   font-weight: 500;
@@ -187,12 +246,25 @@ body {
   letter-spacing: inherit;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-contacts .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-contacts {
+  display: block;
+  margin-bottom: 60px;
+}
+.adress {
+  display: block;
+  margin-bottom: 9px;
+}
 .title {
   font-weight: 700;
   color: var(--black);
   text-align: center;
 }
 .page-title {
+  margin-bottom: 45px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
