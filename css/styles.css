@@ -346,18 +346,26 @@ body {
 .portfolio-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 404px;
 }
 .portfolio-text-box {
-  padding: 20px 24px;
+  margin-bottom: 20px;
+  width: 322px;
+  height: 70px;
 }
 .portfolio-item-title {
+  margin: 0px;
   font-size: 18px;
   line-height: 2;
   text-align: left;
   letter-spacing: 0.06em;
 }
 .portfolio-item-text {
+  margin: 0px;
   font-size: 16px;
   line-height: 1.875;
+}
+.portfolio-img {
+  margin-bottom: 20px;
 }
