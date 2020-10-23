@@ -266,14 +266,15 @@ body {
 }
 /* Подвал */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   height: 252px;
   background-color: var(--dark-bg);
 }
 .footer-logo {
   display: block;
   color: var(--white);
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .footer-contacts-links {
   font-weight: 400;
@@ -284,7 +285,6 @@ body {
 .footer-contacts {
   font-style: normal;
   display: block;
-  padding-bottom: 60px;
 }
 .footer-contacts .item:not(:last-child) {
   padding-bottom: 9px;
@@ -299,14 +299,18 @@ body {
 
 /* Портфолио */
 .portfolio-main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   border: 1px solid #ececec;
   border-right: none;
+  border-bottom: none;
+  border-left: none;
 }
 .filter {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 94px;
   padding-bottom: 50px;
 }
 .filter .item:not(:last-child) {
