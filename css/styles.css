@@ -177,7 +177,6 @@ body {
 /* Заголовок */
 .hero-section {
   height: 600px;
-  margin-bottom: 94px;
 
   background-color: var(--dark-bg);
   text-align: center;
@@ -187,7 +186,8 @@ body {
   padding-bottom: 200px;
 }
 .page-title {
-  margin-bottom: 45px;
+  padding-bottom: 45px;
+  margin-bottom: 0px;
 
   font-weight: 900;
   font-size: 44px;
@@ -208,7 +208,8 @@ body {
 .benefits-section {
   display: flex;
   margin-top: 0px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .benefits-list .item {
   width: 270px;
@@ -225,8 +226,8 @@ body {
 
 /* Описание деятельности */
 .duty-section {
-  height: 386px;
-  margin-bottom: 94px;
+  /* height: 386px; */
+  padding-bottom: 94px;
 }
 .duty-list {
   display: flex;
@@ -236,17 +237,18 @@ body {
   margin-right: 30px;
 }
 .duty-title {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 /* Наша команда */
 .team-section {
-  height: 648px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   margin-bottom: 0px;
 }
 .team-title {
-  padding-top: 94px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .members-list {
   display: flex;
@@ -256,17 +258,19 @@ body {
   margin-right: 30px;
 }
 .member-foto {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .member-name {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
 
   font-size: 16px;
   font-weight: 500;
   line-height: 1.188;
 }
 .member-position {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
 
   font-size: 16px;
   line-height: 1.186;
@@ -281,7 +285,7 @@ body {
   display: block;
   color: var(--white);
   padding-top: 60px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .footer-contacts-links {
   font-weight: 400;
@@ -292,26 +296,29 @@ body {
 .footer-contacts {
   font-style: normal;
   display: block;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 .footer-contacts .item:not(:last-child) {
-  margin-bottom: 9px;
+  padding-bottom: 9px;
 }
 .adress {
   display: block;
-  margin-bottom: 9px;
+  padding-bottom: 9px;
+
+  color: var(--white);
+  font-style: normal;
 }
 
 /* Портфолио */
 .header.portfolio {
-  margin-bottom: 94px;
+  margin-bottom: 0px;
 }
 .filter {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 34px;
-  height: 54px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .filter .item:not(:last-child) {
   margin-right: 8px;
@@ -331,7 +338,7 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .portfolio-list .item {
   margin-right: 30px;
@@ -350,9 +357,8 @@ body {
   height: 404px;
 }
 .portfolio-text-box {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   width: 322px;
-  height: 70px;
 }
 .portfolio-item-title {
   margin: 0px;
@@ -367,5 +373,5 @@ body {
   line-height: 1.875;
 }
 .portfolio-img {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
